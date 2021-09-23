@@ -146,7 +146,7 @@ const teamColors = (teamInput) => {
     return game[teamInput].colors;
   }
 
-//Step 5:
+//Step 5: Function that runs on the game object and returns an array of the team names
 const teamNames = () => {
   const game = gameObject();
   const teamArray = [];
@@ -155,5 +155,16 @@ const teamNames = () => {
   }
   return teamArray
 }
+
+//Step 6: Return a new array that contains all the jersey numbers for the players in a given team
+const playerNumbers = (teamInput) => {
+  const game = gameObject();
+  const teamArray = [];
+  for(player in game[teamInput].players){
+    teamArray.push(game[teamInput].players[player].number)
+  }
+  return teamArray
+}
+
 
 
