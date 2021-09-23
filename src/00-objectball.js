@@ -117,3 +117,11 @@ function gameObject(){
     return game;
   }
   
+const numPointsScored = (playerInput) => {
+  const game = gameObject();
+  for(team in game){
+    if(playerInput in game[team].players){
+      return game[team].players[playerInput].points
+    }
+  }
+}
