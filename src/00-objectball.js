@@ -146,6 +146,14 @@ const teamColors = (teamInput) => {
     return game[teamInput].colors;
   }
 
-
+//Step 5:
+const teamNames = () => {
+  const game = gameObject();
+  const teamArray = [];
+  for(team in game){
+    teamArray.push(game[team].teamName)
+  }
+  return teamArray
+}
 
 
