@@ -1,11 +1,10 @@
-<<<<<<< HEAD
+
 function gameObject(){
   const game = {
-    'home': {
-        'teamName': 'Brooklyn Nets',
-        'colors':['Black', 'White'] ,
-        'players': {
-
+    home: {
+        teamName: 'Brooklyn Nets',
+        colors:['Black', 'White'] ,
+        players: {
             'Alan Anderson' : {
             number : 0,
             shoe : 16,
@@ -56,25 +55,13 @@ function gameObject(){
             blocks : 11,
             slamDunks : 1
           }
+        }
     },
-    'away':{
-
-    }
-  }
-}
-=======
-function gameObject() {
-    let game = {
-        home:{
-            teamName:,
-            colors: [],
-            players: {}
-        },
         away:{
-            teamName:,
-            colors: [],
+            teamName: 'Charlotte Hornets',
+            colors: ['Turqoise', 'Purple'],
             players: {
-                'Jeff Adrien'{
+                'Jeff Adrien' : {
                 number: 4,
                 shoe:18,
                 points:22,
@@ -125,7 +112,8 @@ function gameObject() {
                 slamDunks:12
                 }
             }
-        }
+       }
     }
->>>>>>> 744fb0052ff6bdf6c7d2c61028c93ed8bce4b714
-}
+    return game;
+  }
+  
