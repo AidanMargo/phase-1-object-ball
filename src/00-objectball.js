@@ -116,12 +116,25 @@ function gameObject(){
     }
     return game;
   }
-  
+
+  // Step 2: look for given player and return that player's points
 const numPointsScored = (playerInput) => {
   const game = gameObject();
   for(team in game){
     if(playerInput in game[team].players){
       return game[team].players[playerInput].points
+    }
+  }
+}
+
+
+
+//Step 3: 
+const shoeSize = (playerInput) => {
+  const game = gameObject();
+  for(team in game){
+    if(playerInput in game[team].players){
+      return game[team].players[playerInput].shoe
     }
   }
 }
