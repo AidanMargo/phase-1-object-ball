@@ -166,5 +166,13 @@ const playerNumbers = (teamInput) => {
   return teamArray
 }
 
-
+//Step 7: Return all player stats for a given player
+const playerStats = (playerInput) => {
+  const game = gameObject();
+  for(team in game){
+    if(playerInput in game[team].players){
+      return game[team].players[playerInput]
+    }
+  }
+}
 
