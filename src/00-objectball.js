@@ -176,3 +176,24 @@ const playerStats = (playerInput) => {
   }
 }
 
+//Step 8: Find player with biggest shoe size and return their rebounds
+const bigShoeRebounds = () => {
+  const game = gameObject();
+  let maxShoeSize = 0;
+  let maxShoeSizePlayer;
+  for(team in game){
+    for(player in game[team].players){
+      if(game[team].players[player].shoe > maxShoeSize){
+        debugger
+        maxShoeSize = game[team].players[player].shoe;
+        maxShoeSizePlayer = game[team].players[player];
+        debugger
+        return maxShoeSizePlayer.rebounds
+      } else {
+        console.log('NOPE GO BACK');
+      }
+    }
+  }
+  console.log(maxShoeSizePlayer)
+  return maxShoeSizePlayer
+}
