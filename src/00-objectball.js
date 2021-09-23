@@ -129,7 +129,7 @@ const numPointsScored = (playerInput) => {
 
 
 
-//Step 3: 
+//Step 3: look for given player and return that player's shoe size
 const shoeSize = (playerInput) => {
   const game = gameObject();
   for(team in game){
@@ -138,3 +138,14 @@ const shoeSize = (playerInput) => {
     }
   }
 }
+
+
+// Step 4: Take a given team input and return an array of that team's colors
+const teamColors = (teamInput) => {
+  const game = gameObject();
+    return game[teamInput].colors;
+  }
+
+
+
+
